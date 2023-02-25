@@ -28,6 +28,8 @@ nav a:active{
 }
 
 
+
+
 .navbar{
     height:80px;
     width:100%;
@@ -126,10 +128,7 @@ section{
     width: 100%;
     
 }
-.column1{
-    position: relative;
-    top:20px;
-}
+
 .events .row{
     margin-top: 50px;
 }
@@ -191,14 +190,17 @@ h4{
         display: block;
         color: black;
         }
-        .row{
-            flex-direction: column;
-            justify-content: space-betwee;
-        }
+       
         .row .col{
             margin: 20px auto;
         }
-            
+        .column1{
+            position: relative;
+            top:20px;
+        }
+        .row{
+            flex-direction: column;
+        }
         
         .col img{
             max-width: 90%;
@@ -219,6 +221,7 @@ h4{
             left: 0px;
             border-style: none;
         }
+        
        
 }
 
