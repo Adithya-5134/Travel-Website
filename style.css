@@ -19,13 +19,14 @@ ul{
     
 }
 
-a:hover{
+nav a:hover{
     color:black;
 }
 
-a:active{
+nav a:active{
     color: yellow;
 }
+
 
 .navbar{
     height:80px;
@@ -125,10 +126,9 @@ section{
     width: 100%;
     
 }
-.row.col{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.column1{
+    position: relative;
+    top:20px;
 }
 .events .row{
     margin-top: 50px;
@@ -189,9 +189,11 @@ h4{
     }
     .btn{
         display: block;
+        color: black;
         }
         .row{
             flex-direction: column;
+            justify-content: space-betwee;
         }
         .row .col{
             margin: 20px auto;
