@@ -6,6 +6,7 @@
 }
 body,html{
     overflow-x: hidden;
+    background-color: #E9F1FA;
 }
 a{
     text-decoration: none;
@@ -21,6 +22,7 @@ ul{
 
 nav a:hover{
     color:black;
+    font-size: 38px;
 }
 
 nav a:active{
@@ -31,15 +33,15 @@ nav a:active{
 
 
 .navbar{
-    height:80px;
+    height:90px;
     width:100%;
     background-color:#856887;
-    position:fixed;
-    border:2px solid black;
+    border:2px solid rgb(243, 239, 239);
 }
 .nav-links{
     float: right;
     margin-right: 20px;
+    font-family:sans-serif;
     
 
 }
@@ -59,10 +61,10 @@ nav a:active{
     float: left;
     padding:20px;
     font-size: 30px;
-
+    
 }
 header{
-   background-image: url(images/hhh.jpg);
+   background-image: url(images/ggg.jpg);
    background-size:cover;
    background-position:bottom;
    background-attachment: fixed;
@@ -101,6 +103,13 @@ header{
     border-radius: 30px;
     color: whitesmoke;
 }
+.ctn:hover{
+    font-size: 20px;
+}
+.ctn:active{
+    opacity:.9;
+    transition: ctn .7s ease-in-out;
+}
 
 section{
     width:60%;
@@ -115,7 +124,7 @@ section{
     color: whitesmoke;
     font-size: 30px;
     position: absolute;
-    top: 30px;
+    top: 25px;
     right: 30px;
     display: none;
 
@@ -123,10 +132,15 @@ section{
 .row{
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     text-align: center;
-    width: 100%;
+    width: 100%; 
+     
     
+}
+
+.column1{
+    margin-left: 10px;
 }
 
 .events .row{
@@ -138,9 +152,9 @@ h4{
     margin-top: 10px;
 }
 .explore{
-    background-image: url(images/1d.jpg);
+    background-image: url(images/1f.jpg);
     width: 100vw;
-    height: 80vh;
+    height:100vh;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -163,25 +177,50 @@ h4{
     height: 200px;
     padding:20px 80px;
     margin: 0;
-    background: #484872;
+    background: #B2B5E0;
     text-align: center;
 }
 .footer p{
-    color: whitesmoke;
+    color: black;
     margin:20px auto;
     padding: 20px auto;
+    font-size: 1.3rem;
 }
 @media(max-width:858px)
 {
-    
+    .nav-links a:hover{
+        font-size: 38px;
+    }
+    .btn:hover{
+    color: whitesmoke;
+    }
+    .btn:active{
+    font-size: 40px;
+    }
+    .ctn:hover{
+        font-size: 20px;
+    }
+    .ctn:active{
+        opacity:.9;
+        transition: ctn .7s ease-in-out;
+    }
+
+
     .nav-links{
        position: absolute;
        top:75px;
-       
         width:100vw;
         background-color:#484872 ;
-        text-align: center;            
+        text-align: center; 
+        transition: all .5s ease;
+         margin-top: -900px;   
 
+    }
+   
+     
+
+    .mobile{
+        margin-top: 0;
     }
     .nav-links li{
         display: block;
@@ -189,17 +228,23 @@ h4{
     .btn{
         display: block;
         color: black;
+        cursor: pointer;
         }
        
         .row .col{
             margin: 20px auto;
         }
-        .column1{
+        /* .column1{
             position: relative;
             top:20px;
+        } */
+
+        .column1{
+            margin-top: 30px;
         }
         .row{
             flex-direction: column;
+        
         }
         
         .col img{
@@ -210,17 +255,24 @@ h4{
         }
         .footer{
             padding: 10px;
+            height:150px;
+            
+            
+        }
+        .footer p{
+            font-size: 1.2rem;
         }
         header{
-            margin-top: 410px;
+            margin-top: auto
         }
 
         .navbar{
-            position: absolute;
+            position: sticky;
             top:0px;
             left: 0px;
             border-style: none;
         }
+        
         
        
 }
