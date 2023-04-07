@@ -213,14 +213,14 @@ h4{
         background-color:#484872 ;
         text-align: center; 
         transition: all .5s ease;
-         margin-right: -900px;   
+         margin-left: -900px;   
 
     }
    
      
 
     .mobile{
-        margin-right: 0;
+        margin-left: 0;
     }
     .nav-links li{
         display: block;
