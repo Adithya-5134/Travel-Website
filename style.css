@@ -189,11 +189,10 @@ h4{
     font-size: 1.3rem;
 }
 
-
 @media(max-width:858px)
 {
     .nav-links a:hover{
-        font-size: 38px;
+        font-size: 25px;
     }
     .btn:hover{
     color: whitesmoke;
@@ -211,23 +210,31 @@ h4{
 
 
     .nav-links{
-       position: absolute;
-       top:75px;
-        width:100vw;
-        background-color:#484872 ;
-        text-align: center; 
-        transition: all .5s ease;
-         margin-left: -900px;   
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        background: #484872;
+        display: flex;
+        flex-direction: column;
+        align-items: center;  /* Centering the items */
+        text-align: center;
+        gap: 10px;
+        padding: 10px 0;
+        transform: translateX(-100%);
+        transition: transform 0.5s ease-in-out;
 
     }
    
      
 
     .mobile{
-        margin-left: 0;
+        transform: translateX(0);
     }
     .nav-links li{
-        display: block;
+        display: block;  /* Ensures each link takes full width */
+        width: 100%;
+        padding: 10px 0;
     }
     .btn{
         display: block;
